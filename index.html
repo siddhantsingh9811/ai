@@ -1,0 +1,285 @@
+<html>
+<head>
+	<title>AI</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen+Mono|Poiret+One" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="all">
+		<div class="whole">
+			<div class="cover1"></div>
+			<div class="cover2"></div>
+			<div class="cover3"></div>
+			<div class="main1 a" id="particles-js">
+			<img src="arrow.png" height="10px" width="10px" class="crap">
+				<h1 class="l">ARTIFICIAL INTELLIGENCE</h1>
+				<div class="arrow"><h1>Scroll With Mouse</h1></div>
+			</div>
+			<div class="main2 a">
+				<div class="k1">
+					<h1>What Is AI ?</h1>
+					<p>Back in the 1950s, the fathers of the field Minsky and McCarthy, described artificial intelligence as any task performed by a program or a machine that, if a human carried out the same activity, we would say the human had to apply intelligence to accomplish the task.
+						<br><br>
+						That obviously is a fairly broad definition, which is why you will sometimes see arguments over whether something is truly AI or not.
+						<br>
+						<br>
+						AI systems will typically demonstrate at least some of the following behaviors associated with human intelligence: planning, learning, reasoning, problem solving, knowledge representation, perception, motion, and manipulation and, to a lesser extent, social intelligence and creativity.</p>
+					</div>
+					<div class="k2"></div>
+				</div>
+				<div class="line">
+					<div class="c1 c"></div>
+					<div class="c2 c"></div>
+					<div class="c3 c"></div>
+				</div>
+				<div class="main3 a">
+					<h1 class="h">Things  AI Can DO</h1>
+					<div class="img1">
+						<center><img src="eye.png"></center>
+					</div>
+					<div class="text1">
+						<h1>AI's Can See <div class="b1 t"></div></h1> 
+						<div class="mainslide">
+							<div class="slide1">
+								<p class="p1"> In one recent piece of research, scientists said that not only was a program able to decipher images it had been trained to recognize when people looked at them but: “our method successfully generalized the reconstruction to artificial shapes, indicating that our model indeed ‘reconstructs’ or ‘generates’ images from brain activity, not simply matches to exemplars.”<br><br>
+									In other words, it could decode and represent an image it had not been “trained” to see.
+
+
+								</p>
+								<p class="p2">
+									Meanwhile, scientists at Carnegie Mellon University in the US claim to have gone a step closer to real “mind reading” by using algorithms to decode brain signals that identify deeper thoughts such as “the young author spoke to the editor” and “the flood damaged the hospital”.
+
+									The technology, the researchers say, is able to understand complex events, expressed as sentences, and semantic features, such as people, places and actions, to predict what types of thoughts are being contemplated.
+								</p>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="main4 a">
+					<div class="img2">
+						<center><img src="book.png"></center>
+					</div>
+					<div class="text2">
+						<h1>AI's Can Read</h1><div class="b2 t"></div><br> 
+						<div class="mainslide">
+							<div class="slide2">
+								<p class="p1">The idea that a program can detect a user's mood and respond accordingly is defined as "emotion AI". Chinese tech company Huawei wants to change the way people talk to their artificially intelligent voice assistants. The firm plans to make those conversations more emotionally interactive, according to senior executives.<br><br>
+									"We want to provide emotional interactions," Felix Zhang, vice president of software engineering at Huawei's consumer business group.
+
+								</p>
+								<p class="p2">
+									"Adding emotion-sensing capabilities will enable [virtual personal assistants] to analyze data points from facial expressions, voice intonation and behavioral patterns," Gartner said. <br><br>If the idea of your smartphone turning into an emotional companion sounds like something out of a science fiction movie, it's not far off. In fact, Huawei executives talked about the sci-fi film "Her" as an inspiration.
+
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main5 a">
+					<div class="img3">
+						<center><img src="ear.png"></center>
+					</div>
+					<div class="text3">
+						<h1>AI's Can Hear <div class="b3 t"></div></h1> 
+						<div class="mainslide">
+							<div class="slide3">
+								<p class="p1">AI analyzes dolphin chatter and discovers something we didn’t know. <br>
+									In each culture, we’re trained to hear in a certain way. In Indian music, which uses pitches between notes with which Western listeners are familiar. Similar biases make it difficult for human researchers to discern the subtleties of animal sounds that may sound alike to us, but maybe not to them. AI, though, is very good at identifying patterns, and researchers have set it the task of analyzing sounds from the ocean floor. 
+								</p>
+								<p class="p2">
+									It’s just found six distinct dolphin clicks we never new existed.<br>
+									Scientists have been using the clicks to differentiate between different species and different types of dolphins, and to track their subsurface perambulations. The algorithm sorted the clicks based on a handful of criteria, beginning with variations within a click and then variations in the way multiple clicks were strung together. Clicks were further grouped according to their tonal, or “spectral” shape.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('.main1').on('mousewheel', function(updown){
+						if(updown.originalEvent.wheelDelta/120 > 0) {
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"0"})
+						}else{
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"-100%"})
+							animate();
+						}
+					})
+
+					$('.main2').on('mousewheel', function(updow){
+						if(updow.originalEvent.wheelDelta/120 > 0) {
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"0%"})
+						}else{
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"-200%"})
+							a1()
+						}
+					})
+
+					$('.main3').on('mousewheel', function(updo){
+						if(updo.originalEvent.wheelDelta/120 > 0) {
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"-100%"})
+						}else{
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"-300%"})
+							a2()
+						}
+					})
+					$('.cover1').on('mousewheel', function(updo){
+						if(updo.originalEvent.wheelDelta/120 > 0) {
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"-100%"})
+						}else{
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"-300%"})
+							a2()
+						}
+					})
+					$('.main4').on('mousewheel', function(updo){
+						if(updo.originalEvent.wheelDelta/120 > 0) {
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"-200%"})
+
+						}else{
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"-400%"})
+							a3()
+						}
+					})
+					$('.cover2').on('mousewheel', function(updo){
+						if(updo.originalEvent.wheelDelta/120 > 0) {
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"-200%"})
+
+						}else{
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"-400%"})
+							a3()
+						}
+					})
+					$('.main5').on('mousewheel', function(updo){
+						if(updo.originalEvent.wheelDelta/120 > 0) {
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"-300%"})
+
+						}else{
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"-400%"})
+						}
+					})
+					$('.cover3').on('mousewheel', function(updo){
+						if(updo.originalEvent.wheelDelta/120 > 0) {
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"-300%"})
+
+						}else{
+							$(".whole").css({"transition":"1.7s"})
+							$(".whole").css({"top":"-400%"})
+						}
+					})
+					function a1() {
+						$('.img1').css('left','10vh')
+						$(".img1").css({"transition":"2s"})
+
+					}
+					function a2() {
+						$('.img2').css('right','10vh')
+						$(".img2").css({"transition":"2s"})
+
+					}
+					function a3() {
+						$('.img3').css('left','10vh')
+						$(".img3").css({"transition":"2s"})
+					}
+					function animate(){
+						$('.k1').css('left','0')
+						$('.k2').css('right','0')
+						$('.k1').css('transition','2s')
+						$('.k2').css('transition','2s')
+					}
+				});
+				$(document).ready(function(){
+					var x = 1
+					var y = 1
+					var z = 1
+					$('.b1').click(function(){
+						if (x==1) {
+							$('.slide1').css('transform','translateY(-50%)')
+							$('.slide1').css('transition','1s')
+							$('.b1').css('background','url(minus.png)')
+							$('.b1').css('transition','0s')
+							$('.b1').css('height','50px')
+							$('.b1').css('width','50px')
+							$('.b1').css('background-size','cover')
+							x = 0
+						} else {
+							console.log('sadfa')
+							$('.slide1').css('transform','translateY(0)')
+							$('.slide1').css('transition','1s')
+							$('.b1').css('background','url(plus.png)')
+							$('.b1').css('transition','0s')
+							$('.b1').css('height','50px')
+							$('.b1').css('width','50px')
+							$('.b1').css('background-size','cover')
+							x=1
+						}
+					})
+					$('.b2').click(function(){
+						if (y==1) {
+							$('.slide2').css('transform','translateY(-50%)')
+							$('.slide2').css('transition','1s')
+							$('.b2').css('background','url(minus.png)')
+							$('.b2').css('transition','0s')
+							$('.b2').css('height','50px')
+							$('.b2').css('width','50px')
+							$('.b2').css('background-size','cover')
+
+							y = 0
+						} else {
+							$('.slide2').css('transform','translateY(0)')
+							$('.slide2').css('transition','1s')
+							$('.b2').css('background','url(plus.png)')
+							$('.b2').css('transition','0s')
+							$('.b2').css('height','50px')
+							$('.b2').css('width','50px')
+							$('.b2').css('background-size','cover')
+							y=1
+						}
+					})
+					$('.b3').click(function(){
+						if (z==1) {
+							$('.slide3').css('transform','translateY(-50%)')
+							$('.slide3').css('transition','1s')
+							$('.b3').css('background','url(minus.png)')
+							$('.b3').css('transition','0s')
+							$('.b3').css('height','50px')
+							$('.b3').css('width','50px')
+							$('.b3').css('background-size','cover')
+
+							z = 0
+						} else {
+							console.log('sadfa')
+							$('.slide3').css('transform','translateY(0)')
+							$('.slide3').css('transition','1s')
+							$('.b3').css('background','url(plus.png)')
+							$('.b3').css('transition','0s')
+							$('.b3').css('height','50px')
+							$('.b3').css('width','50px')
+							$('.b3').css('background-size','cover')
+							z=1
+						}
+					})
+
+				})
+
+			</script>
+			<script type="text/javascript" src="particles.js"></script>
+			<script type="text/javascript" src="app.js"></script>
+		</body>
+		</html>
